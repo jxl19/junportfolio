@@ -3,10 +3,6 @@ function showDefine() {
     $('#define').fadeIn();
     $('.main-content').addClass("align-center");
     $('.main-content').removeClass("clear-padding");
-    // $('#projects-button').click(function() {
-    //   navAnimation('#1');
-    //   showProjects();
-    // })
 }
 
 function showProjects() {
@@ -70,7 +66,6 @@ function navAnimation(selection) {
         $('#0, #1').removeClass('nav-link-open');
     }
 }
-
 
 $(function () {
     var year = new Date().getFullYear()
