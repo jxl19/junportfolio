@@ -6,7 +6,7 @@ html {
   overflow-y: scroll;
 }
 
-#define{
+#profile{
     margin-top:15%;
 }
 
@@ -31,6 +31,19 @@ html {
 
 .topnav{
   background-color: #fffcf8;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-text{
+    margin-top: 20px;
+}
+
+.email{
+    display: inline-block;
+    font-weight: 700;
 }
 
 .card-img-top{
@@ -123,14 +136,14 @@ footer p {
 }
 
 @media only screen and (max-width: 770px), only screen and (max-device-width: 770px) {
-    #define{
+    #profile{
       margin-top:50%;
       font-size: 30px;
     }
 }
 
 @media only screen and (max-device-width:1100px) {
-  #define{
+  #profile{
     margin-top:50%;
     font-size: 30px;
   }

@@ -1,6 +1,6 @@
-function showDefine() {
+function showProfile() {
     $('.main-content .content-wrap').children().hide();
-    $('#define').fadeIn();
+    $('#profile').fadeIn();
     $('.main-content').addClass("align-center");
     $('.main-content').removeClass("clear-padding");
 }
@@ -20,7 +20,7 @@ function showProjects() {
 
 // creates li for each nav item
 function createNav() {
-    var content = ["Jun Lei", "Projects", "Github", "LinkedIn"];
+    var content = ["Jun Lei", "Projects"];
     content.forEach(function (i) {
         var liItem = $("<li><a id='" + content.indexOf(i) +
             "' class='nav-link'>" + i + "</a></li>");
@@ -34,17 +34,11 @@ function createNav() {
 function navRouter(i) {
     if (i.text() === "Jun Lei") {
         navAnimation('#0');
-        showDefine();
+        showProfile();
     }
     else if (i.text() === "Projects") {
         navAnimation('#1');
         showProjects();
-    }
-    else if (i.text() === "Github") {
-        window.open('https://github.com/jylei', '_blank');
-    }
-    else {
-        window.open('https://linkedin.com', '_blank');
     }
 }
 
@@ -57,14 +51,6 @@ function navAnimation(selection) {
         $('#1').addClass('nav-link-open');
         $('#0, #2').removeClass('nav-link-open');
     }
-    else if (selection === "#2") {
-        $('#2').addClass('nav-link-open');
-        $('#0, #1').removeClass('nav-link-open');
-    }
-    else {
-        $('#2').addClass('nav-link-open');
-        $('#0, #1').removeClass('nav-link-open');
-    }
 }
 
 $(function () {
@@ -72,7 +58,7 @@ $(function () {
     document.querySelector('footer p').innerHTML = '&copy; Jun Lei ' + year
     createNav();
     navAnimation('#0');
-    showDefine();
+    showProfile();
     $('body').fadeIn().css({
         'display': 'block'
     });
