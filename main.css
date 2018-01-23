@@ -10,6 +10,9 @@ html {
     margin-top:15%;
 }
 
+.card{
+    text-align: center;
+}
 #about{
   margin-top:10%;
 }
@@ -19,6 +22,9 @@ html {
     margin-right: 7%;
 }
 
+.proj-nav{
+    font-size: 14px;
+}
 .card-img-top{
     max-width:500px;
     max-height:500px;
@@ -26,7 +32,6 @@ html {
 
 .mb-3{
     border-bottom: 1px solid black;
-    margin-bottom:65px;
 }   
 
 .topnav{
@@ -34,6 +39,7 @@ html {
 }
 
 .card-title{
+    padding-top: 49px;
     font-weight: 700;
 }
 
@@ -60,14 +66,24 @@ html {
   font-size:5em;
   margin-right:15px;
 }
-
+.topnav{
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
 .nav {
+    font-size: 16px;
     display: flex;
     height: 100%;
     flex: 0 0 25%;
     align-items: center;
     justify-content: center;
   }
+
+.p1,.p2{
+    margin-right: 10px;
+}
 
 .nav-link {
     -webkit-transition: font-size 0.3s ease;
@@ -87,7 +103,7 @@ li{
   display:inline;
 }
 
-.fa{
+.fab{
   margin-right:20px;
 }
 

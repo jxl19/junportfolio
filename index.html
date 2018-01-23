@@ -4,19 +4,24 @@
 <head>
     <title>Jun Lei</title>
     <meta name="description" content="Jun Lei's portfolio site.">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Skranji" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- for the navbar we can use a dataspy of some sort to smooth scroll to what we need to get to-->
+    <!-- we dont need to reupdate the page to render our projects side. just have it all in one page  -->
+    <!-- make sure to recenter the stuff for the project side -->
+    <!-- a link to github, i.e live app, then code to github -->
     <div>
     <section>
-        <div class="topnav navbar-fixed-top">
+        <div class="topnav">
             <div class="nav-wrap">
-                <ul class="nav justify-content-center">
+                <ul class="nav proj-nav">
+                    <li class="p1"><a href=#proj1>LolChampion</a></li>
+                    <li class="p2"><a href=#proj2>MyNoteCard</a></li>
+                    <li class="p3"><a href=#proj3>Recipied</a></li>
                 </ul>
             </div>
         </div>
@@ -33,37 +38,40 @@
                         <br/>
                         <p class="profile">Currently I am looking for work and can be contacted by using the following links:</p>
                         <ul class="social">
-                            <li><a class="social-links" href="https://github.com/jylei" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                            <li><a class="social-links" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a class="social-links" href="https://github.com/jylei" target="_blank"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></i></a></li>
+                            <li><a class="social-links" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></i></a></li>
                             <li><a class="social-links" href="mailto:jlei91@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
                         </ul>
                         <!-- add photo under name -->
                         Email: <div class="email">jlei91@gmail.com</div>
                 </div>
                 <div id="about" class="flex-col">
-                    <div class="card text-center mb-3">
+                    <div id= "proj1" class="card text-center mb-3">
                         <h4 class="card-title">LolChampion</h4>
                         <a href="https://jylei.github.io/LoLChampion/" target="_blank"><img class="card-img-top" src="img/LolChampion.png"></a>
                         <div class="card-block">
                             <p class="card-text">Allows for the user to search up different champions and learn about their bio and also see the
                                 different types of skins that are available to the champion.</p>
                                 <p class="card-text"><small class="text-muted">HTML, CSS, Javascript, JQuery, Bootstrap</small></p>
+                                <small><a href="" target="_blank">Link to Repo</a></small>
                         </div>
                     </div>
-                    <div class="card text-center mb-3">
+                    <div id = "proj2" class="card text-center mb-3">
                         <h4 class="card-title">MyNotecard</h4>
                         <a href="https://mynotecard.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/myNoteCard.png"></a>
                         <div class="card-block">
                             <p class="card-text">Allows for users to save different notecards and also access it later to help with their studies</p>
                             <p class="card-text"><small class="text-muted">HTML,CSS,Javascript, JQuery, Bootstrap, MongoDB, Node, Express, Mocha, Chai</small></p>
+                            <small><a href="" target="_blank">Link to Repo</a></small>
                         </div>
                     </div>
-                    <div class="card text-center mb-3">
+                    <div id= "proj3" class="card text-center mb-3">
                         <h4 class="card-title">Reciped</h4>
                         <a href="https://reciped.netlify.com" target="_blank"><img class="card-img-top" src="img/Reciped.png"></a>
                         <div class="card-block">
                             <p class="card-text">Allows for users to save and search recipes based on what users have uploaded.</p>
                             <p class="card-text"><small class="text-muted">HTML, CSS, Javascript, JQuery, Bootstrap, MongoDB, Node, Express, Mocha, Chai, ReactJS</small></p>
+                            <small><a href="" target="_blank">Link to Repo</a></small>
                         </div>
                     </div>
                 </div>
@@ -75,7 +83,6 @@
     </footer>
 </div>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
 </body>
 
