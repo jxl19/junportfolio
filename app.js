@@ -12,14 +12,16 @@ $('a[href*="#"]')
     ) {
       var el = $(event.target.getAttribute('href'));
       var elOffset = el.offset().top;
+      console.log(elOffset);
       var elHeight = el.height();
       var windowHeight = $(window).height();
       var offset;
       if (elHeight < windowHeight) {
+        console.log('el less');
         offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
       }
       else {
-        offset = elOffset;
+        offset = elOffset - ((windowHeight / 0.85) - (elHeight / 2));
       }
       // Figure out element to scroll to
       var target = $(this.hash);
@@ -37,10 +39,11 @@ $('a[href*="#"]')
           $target.focus();
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
-          } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
+          }
+          // else {
+          //   $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+          //   $target.focus(); // Set focus again
+          // };
         });
       }
     }
