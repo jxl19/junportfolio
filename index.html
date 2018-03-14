@@ -11,82 +11,126 @@
 
 <body>
     <div>
-    <section>
-        <div class="topnav">
-            <div class="nav-wrap">
-                <ul class="nav proj-nav">
-                    <li class="p1"><a href=#profile>About</a></li>
-                    <li class="p2"><a href=#proj>Projects</a></li>
-                    <li class="p3"><a href=#contact>Contact</a></li>
-                </ul>
+        <section>
+            <div class="topnav">
+                <div class="nav-wrap">
+                    <ul class="nav proj-nav">
+                        <li class="p1">
+                            <a href=#profile>About</a>
+                        </li>
+                        <li class="p2">
+                            <a href=#proj>Projects</a>
+                        </li>
+                        <li class="p3">
+                            <a href=#contact>Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="jumbotron">
-            <img src="img/jumbotron-image-jun.jpg">
-        </div>
-        <div class="main-content">
-            <div class="content-wrap">
-                <div id="about" class="flex-col">
+            <div class="jumbotron">
+                <img src="img/jumbotron-image-jun.jpg">
+            </div>
+            <div class="main-content">
+                <div class="content-wrap">
+                    <div id="about" class="flex-col">
                         <div id="profile" class="flex-col">
-                                <p class="profile">
-                                    <h1>Jun Lei</h1>
-                                    <p>I am a web developer and a recent graduate of the Front End Web Development bootcamp at Thinkful.
-                                        I love to code because it allows me to solve problems on my own. I get to choose how I want to
-                                        go about solving a problem, and when it is solved it is just a great feeling. When I'm not coding,
-                                        I like to sit back and hang out with friends, whether it is playing some video games, board games
-                                        or just hanging out enjoying a beer.</p>
-                                    <br/>
+                            <p class="profile">
+                                <h1>Jun Lei</h1>
+                                <p>I am a web developer and a recent graduate of the Front End Web Development bootcamp at Thinkful.
+                                    I love to code because it allows me to solve problems on my own. I get to choose how
+                                    I want to go about solving a problem, and when it is solved it is just a great feeling.
+                                    When I'm not coding, I like to sit back and hang out with friends, whether it is playing
+                                    some video games, board games or just hanging out enjoying a beer.</p>
+                                <br/>
+                        </div>
+                        <div id="proj">
+                            <div class="card text-center mb-3">
+                                <h4 class="card-title">LolChampion</h4>
+                                <a href="https://jylei.github.io/LoLChampion/" target="_blank">
+                                    <img class="card-img-top" src="img/LolChampion.png">
+                                </a>
+                                <div class="card-block">
+                                    <p class="card-text">Allows for the user to search up different champions and learn about their bio and also
+                                        see the different types of skins that are available to the champion.</p>
+                                    <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, Bootstrap</p>
+                                    <small>
+                                        <a href="https://github.com/jylei/LoLChampion" target="_blank">Link to Repo</a>
+                                    </small>
+                                </div>
                             </div>
-                <div id="proj">
-                    <div class="card text-center mb-3">
-                        <h4 class="card-title">LolChampion</h4>
-                        <a href="https://jylei.github.io/LoLChampion/" target="_blank"><img class="card-img-top" src="img/LolChampion.png"></a>
-                        <div class="card-block">
-                            <p class="card-text">Allows for the user to search up different champions and learn about their bio and also see the
-                                different types of skins that are available to the champion.</p>
-                                <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, Bootstrap</p>
-                                <small><a href="https://github.com/jylei/LoLChampion" target="_blank">Link to Repo</a></small>
+                            <div id="proj2" class="card text-center mb-3">
+                                <h4 class="card-title">MyNotecard</h4>
+                                <a href="https://mynotecard.herokuapp.com/" target="_blank">
+                                    <img class="card-img-top" src="img/myNoteCard.png">
+                                </a>
+                                <div class="card-block">
+                                    <p class="card-text">Allows for users to save different notecards and also access it later to help with their
+                                        studies</p>
+                                    <p class="card-text text-muted">HTML,CSS,Javascript, JQuery, Bootstrap, MongoDB, Node, Express, Mocha, Chai</p>
+                                    <small>
+                                        <a href="https://github.com/jylei/MyNoteCard" target="_blank">Link to Repo</a>
+                                    </small>
+                                </div>
+                            </div>
+                            <div id="proj3" class="card text-center mb-3">
+                                <h4 class="card-title">Recipied</h4>
+                                <a href="https://recipied.netlify.com" target="_blank">
+                                    <img class="card-img-top" src="img/Reciped.png">
+                                </a>
+                                <div class="card-block">
+                                    <p class="card-text">Allows for users to save and search recipes based on what users have uploaded.</p>
+                                    <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, MongoDB, Node, Express, Mocha, Chai, ReactJS</p>
+                                    <small>
+                                        <a href="https://github.com/jylei/reactrecipe" target="_blank">Link to Repo</a>
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id = "proj2" class="card text-center mb-3">
-                        <h4 class="card-title">MyNotecard</h4>
-                        <a href="https://mynotecard.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/myNoteCard.png"></a>
-                        <div class="card-block">
-                            <p class="card-text">Allows for users to save different notecards and also access it later to help with their studies</p>
-                            <p class="card-text text-muted">HTML,CSS,Javascript, JQuery, Bootstrap, MongoDB, Node, Express, Mocha, Chai</p>
-                            <small><a href="https://github.com/jylei/MyNoteCard" target="_blank">Link to Repo</a></small>
+                        <div id="contact" class="flex-col text-center">
+                            <h1 class="cont">Contact</h1>
+                            <p class="profile">Currently I am looking for work and can be contacted by using the following links:</p>
+                            <ul class="social">
+                                <li>
+                                    <a class="social-links" href="https://github.com/jylei" target="_blank">
+                                        <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-links" href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fab fa-linkedin-in fa-2x"></i>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-links" href="mailto:jlei91@gmail.com">
+                                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            Email:
+                            <div class="email">jlei91@gmail.com</div>
                         </div>
-                    </div>
-                    <div id= "proj3" class="card text-center mb-3">
-                        <h4 class="card-title">Recipied</h4>
-                        <a href="https://recipied.netlify.com" target="_blank"><img class="card-img-top" src="img/Reciped.png"></a>
-                        <div class="card-block">
-                            <p class="card-text">Allows for users to save and search recipes based on what users have uploaded.</p>
-                            <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, MongoDB, Node, Express, Mocha, Chai, ReactJS</p>
-                            <small><a href="https://github.com/jylei/reactrecipe" target="_blank">Link to Repo</a></small>
-                        </div>
-                    </div>
-                </div>
-                    <div id="contact" class="flex-col text-center">      
-                        <h1 class="cont">Contact</h1>                      
-                        <p class="profile">Currently I am looking for work and can be contacted by using the following links:</p>
-                        <ul class="social">
-                            <li><a class="social-links" href="https://github.com/jylei" target="_blank"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></i></a></li>
-                            <li><a class="social-links" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></i></a></li>
-                            <li><a class="social-links" href="mailto:jlei91@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                        </ul>
-                        Email: <div class="email">jlei91@gmail.com</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; Jun Lei 2018</p>
-    </footer>
-</div>
+        </section>
+        <footer>
+            <p>&copy; Jun Lei 2018</p>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115772621-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115772621-1');
+    </script>
+
 </body>
 
 </html>
