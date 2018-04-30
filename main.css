@@ -40,12 +40,6 @@ html {
     border-bottom: 1px solid black;
 }   
 
-.topnav{
-  background-color: #f7f7f7;
-  font-family: Skranji;
-
-}
-
 .card-title{
     padding-top: 49px;
     font-weight: 700;
@@ -79,6 +73,9 @@ html {
     position: fixed; 
     top: 0; 
     width: 100%; 
+    background-color: #f7f7f7;
+    font-family: Skranji;
+    z-index:1;
 }
 .nav {
     font-size: 20px;
