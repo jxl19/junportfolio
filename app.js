@@ -21,7 +21,7 @@ $('a[href*="#"]')
         offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
       }
       else {
-        offset = elOffset - ((windowHeight / 0.85) - (elHeight / 2));
+        offset = elOffset - ((windowHeight / 0.53) - (elHeight / 2));
       }
       // Figure out element to scroll to
       var target = $(this.hash);

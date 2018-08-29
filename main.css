@@ -37,12 +37,22 @@ html {
 }
 
 .mb-3{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e0e0e0;
 }   
 
+.seperator{ 
+    margin: 0 auto;
+    background: url(img/separator.png);
+    height: 9px;
+    width: 576px;
+}
 .card-title{
     padding-top: 49px;
     font-weight: 700;
+}
+
+.card-block{
+    margin-bottom: 30px;
 }
 
 .card-text{
@@ -73,7 +83,7 @@ html {
     position: fixed; 
     top: 0; 
     width: 100%; 
-    background-color: #f7f7f7;
+    background-color: #fffcf8;
     font-family: Skranji;
     z-index:1;
 }
@@ -100,12 +110,15 @@ html {
     border-bottom: 3px solid rgba(221, 221, 221, 0.4);
 }
 
+.p-info{
+    text-align: center;
+}
 ul{
   padding-left:0;
 }
 
 li{
-  display:inline;
+  display:inline-block;
 }
 
 .fab{
