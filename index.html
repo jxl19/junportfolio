@@ -22,125 +22,196 @@
 <body>
     <div>
         <section>
-            <div class="topnav">
+            <div class="navbar fixed-top">
                 <div class="nav-wrap">
                     <ul class="nav proj-nav">
                         <li class="p1">
-                            <a href=#profile>About</a>
+                            <a href=#about>ABOUT</a>
                         </li>
                         <li class="p2">
-                            <a href=#proj>Projects</a>
+                            <a href=#projects>PROJECTS</a>
                         </li>
                         <li class="p3">
-                            <a href=#contact>Contact</a>
+                            <a href=#contact>CONTACT</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="jumbotron">
-                <img src="img/jumbotron-image-jun.jpg">
+            <div class="home">
+                <img src="img/working.jpg">
+                <h1 class="text">
+                    <span>Hey There!</span>
+                    <br>
+                    <span>I'm <span style="color:#f3c26b">Jun Lei</span> a web developer</span>
+                    <br>
+                    <span>Based in Oakland</span>
+                </h1>
             </div>
-            <div class="main-content">
-                <div class="content-wrap">
-                    <div id="about" class="flex-col">
-                        <div id="profile" class="flex-col">
-                            <p class="profile">
-                                <div class="p-info">I'm a full stack developer who specializes in the MERN stack. I design and build full-stack web applications, and sometimes mobile applications. Picking up a new framework or language isn't a problem. You can see the work that I have done in the projects section below.</div>
-                                <br/>
+            <div id="about">
+                <h1>ABOUT</h1>
+                <p class="profile-container">
+                    <div class="about-text">I'm a full stack developer who specializes in the MERN stack. I design and
+                        build full-stack web applications. You can see the work that I have done in the projects
+                        section below.</div>
+                </p>
+            </div>
+            <section id="projects">
+                <div class="parent">
+                    <div class="project-desc-hidden">
+                        <h4 class="card-title">SafeDeliver</h4>
+                        <p class="card-text">An android app that allows for users to contact local police with the
+                            ease of a simple button press using the Noonlight API.</p>
+                    </div>
+                    <div class="child">
+                        <a href="https://github.com/jylei/SD" target="_blank">
+                            <img class="card-img-top" src="img/safedeliver.png">
+                        </a>
+                    </div>
+                    <div class="child2">
+                        <div class="project-desc">
+                            <h4 class="card-title">SafeDeliver</h4>
+                            <p class="card-text">An android app that allows for users to contact local police with
+                                the ease of a simple button press using the Noonlight API.</p>
                         </div>
-                        <div id="proj">
-                            <div class="card text-center mb-3">
-                                <h4 class="card-title">SafeDeliver</h4>
-                                <a href="https://github.com/jylei/SD" target="_blank">
-                                    <img class="card-img-top" src="img/safedeliver.png">
-                                </a>
-                                <div class="card-block">
-                                        <p class="card-text">An android app that allows for users to contact local police with the ease of a simple button press using the Noonlight API.</p>
-                                        <p class="card-text text-muted">React-Native, MongoDB, Node, Express, Java</p>
-                                    </div>
-                            </div>
-                            <div class="seperator"></div>
-                            <div class="card text-center mb-3">
-                                <h4 class="card-title">Recipied</h4>
-                                <a href="https://recipied.netlify.com" target="_blank">
-                                    <img class="card-img-top" src="img/Recipied.png">
-                                </a>
-                                <div class="card-block">
-                                    <p class="card-text">Allows for users to save and search recipes based on what users have uploaded.</p>
-                                    <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, MongoDB, Node, Express, Mocha, Chai, ReactJS</p>
-                                    <small>
-                                        <a href="https://github.com/jylei/reactrecipe" target="_blank">Link to Repo</a>
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="seperator"></div>
-                            <div class="card text-center mb-3">
-                                <h4 class="card-title">MyNotecard</h4>
-                                <a href="https://mynotecard.herokuapp.com/" target="_blank">
-                                    <img class="card-img-top" src="img/notecard-homepage.png">
-                                </a>
-                                <div class="card-block">
-                                    <p class="card-text">Allows for users to save different notecards and also access it later to help with their
-                                        studies
-                                    </p>
-                                    <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, MongoDB, Node, Express, Mocha, Chai</p>
-                                    <small>
-                                        <a href="https://github.com/jylei/MyNoteCard" target="_blank">Link to Repo</a>
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="seperator"></div>
-                            <div class="card text-center mb-3">
-                                <h4 class="card-title">LolChampion</h4>
-                                <a href="https://jylei.github.io/LoLChampion/" target="_blank">
-                                    <img class="card-img-top" src="img/LolChampion.png">
-                                </a>
-                                <div class="card-block">
-                                    <p class="card-text">Allows for the user to search up different champions and learn about their bio and also
-                                        see the different types of skins that are available to the champion.</p>
-                                    <p class="card-text text-muted">HTML, CSS, Javascript, JQuery, Bootstrap</p>
-                                    <small>
-                                        <a href="https://github.com/jylei/LoLChampion" target="_blank">Link to Repo</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="seperator"></div>
-                        <div id="contact" class="flex-col text-center">
-                            <h1 class="cont">Contact</h1>
-                            <p class="profile">Currently I am looking for work and can be contacted by using the following links:</p>
-                            <ul class="social">
-                                <li>
-                                    <a class="social-links" href="https://github.com/jylei" target="_blank">
-                                        <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="social-links" href="https://www.linkedin.com/in/jun-lei-896b32ba/" target="_blank">
-                                        <i class="fab fa-linkedin-in fa-2x"></i>
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="social-links" href="mailto:jlei91@gmail.com">
-                                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            Email:
-                            <div class="email">jlei91@gmail.com</div>
+                        <div class="technologies">
+                            <div>React-native</div>
+                            <div>MongoDB</div>
+                            <div>Node.js</div>
+                            <div>Express</div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="parent">
+                    <div class="project-desc-hidden">
+                        <h4 class="card-title">Recipied</h4>
+                        <p class="card-text">A collection of recipes that users can save and share between other
+                            users.</p>
+                    </div>
+                    <div class="child">
+                        <a href="https://recipied.netlify.com" target="_blank">
+                            <img class="card-img-top" src="img/Recipied.png">
+                        </a>
+                    </div>
+                    <div class="child2">
+                        <div class="project-desc">
+                            <h4 class="card-title">Recipied</h4>
+                            <p class="card-text">A collection of recipes that users can save and share between other
+                                users.</p>
+                        </div>
+                        <div class="technologies">
+                            <div>MongoDB</div>
+                            <div>Express</div>
+                            <div>React</div>
+                            <div>Node.js</div>
+                            <div>JQuery</div>
+                            <div>CSS</div>
+                            <div>Mocha</div>
+                            <div>Chai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="project-desc-hidden">
+                        <h4 class="card-title">MyNotecard</h4>
+                        <p class="card-text">Allows for users to save different notecards and also access it later
+                            to help with their
+                            studies
+                        </p>
+                    </div>
+                    <div class="child">
+                        <a href="https://mynotecard.herokuapp.com/" target="_blank">
+                            <img class="card-img-top" src="img/notecard-homepage.png">
+                        </a>
+                    </div>
+                    <div class="child2">
+                        <div class="project-desc">
+                            <h4 class="card-title">MyNotecard</h4>
+                            <p class="card-text">Allows for users to save different notecards and also access it
+                                later to help with their
+                                studies
+                            </p>
+                        </div>
+                        <div class="technologies">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>Javascript</div>
+                            <div>JQuery</div>
+                            <div>MongoDB</div>
+                            <div>Node.js</div>
+                            <div>Express</div>
+                            <div>Mocha</div>
+                            <div>Chai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="child">
+                        <a href="https://jylei.github.io/LoLChampion/" target="_blank">
+                            <img class="card-img-top" src="img/LolChampion.png">
+                        </a>
+                    </div>
+                    <div class="child2">
+                        <div class="project-desc">
+                            <h4 class="card-title">LolChampion</h4>
+                            <p class="card-text">Allows for the user to search up different champions and learn
+                                about
+                                their bio and also see the different types of skins that are available to the
+                                champion.</p>
+                        </div>
+                        <div class="technologies">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>Javascript</div>
+                            <div>JQuery</div>
+                            <div>Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h1 class="form-header">CONTACT ME</h1>
+                <form action="https://mailthis.to/jlei91@gmail.com" method="POST" enctype="multipart/form-data"
+                    autocomplete="off" class="contact-form">
+                    <div class="contact-info">
+                        <div class="name">
+                            <input id="name" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="email">
+                            <input id="email" type="text" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="subject">
+                        <input id="subject" type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="message">
+                        <textarea id="message" name="message" cols="30" rows="10"
+                            placeholder="Your message here"></textarea>
+                    </div>
+                    <button type="submit" class="submit">SEND MESSAGE</button>
+                    <input type="hidden" name="_honeypot">
+                    <input type="hidden" name="_confirmation" value="Your message was sent to Jun">
+                </form>
+            </section>
         </section>
         <footer>
-            <p>&copy; Jun Lei 2018</p>
+            <ul class="social">
+                <li>&copy; Jun Lei 2020</li>
+                <li>
+                    <a class="social-links" href="https://github.com/jylei" target="_blank">
+                        <i class="fab fa-github-square fa-1x" aria-hidden="true"></i>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-links" href="https://www.linkedin.com/in/jun-lei-896b32ba/" target="_blank">
+                        <i class="fab fa-linkedin-in fa-1x"></i>
+                        </i>
+                    </a>
+                </li>
+            </ul>
         </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="app.js"></script>
 
 </body>
 
